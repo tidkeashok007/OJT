@@ -3,14 +3,14 @@ import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
 # Constants
-height = 10  # Initial height of the ball
-g = 9.8  # Acceleration due to gravity
-e = 0.8  # Coefficient of restitution (elasticity)
+height = 10  
+g = 9.8  
+e = 0.8  
 
 # Time
 dt = 0.1  # Time step
-total_time = np.sqrt(2 * height / g) * 2  # Total animation time
-steps = int(total_time / dt)  # Number of time steps
+total_time = np.sqrt(2 * height / g) * 2  
+steps = int(total_time / dt)  
 
 # Ball properties
 ball_radius = 0.5
