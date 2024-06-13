@@ -1,0 +1,21 @@
+CSV file containing historical weather data for a city. The file has the following columns:
+ 
+Date: The date of the recorded data.
+Temperature: The average temperature of the day in Celsius.
+Precipitation: The precipitation in mm.
+WindSpeed: The average wind speed in km/h.
+
+The task is to:
+ 
+Load the data into a pandas DataFrame.
+Perform data cleaning and preprocessing:
+Check for and handle missing values.
+Convert the Date column to a datetime type.
+Use NumPy to calculate the following statistics for the temperature:
+Mean
+Standard deviation
+Maximum
+Minimum
+Generate a time series plot using Matplotlib to show the temperature trend over time.
+Create a bar chart to show the average monthly precipitation.
+Plot a scatter plot to examine the relationship between wind speed and temperature.
