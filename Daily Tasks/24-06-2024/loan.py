@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import accuracy_score, classification_report
+from sklearn.metrics import accuracy_score, classification_report,confusion_matrix,precision_score,recall_score,f1_score
 from sklearn.model_selection import GridSearchCV
 
 #load the dataset loan_data.csv
@@ -28,5 +28,18 @@ print(f"accuracy:{accuracy:.2f}")
 print("classification_report:")
 print(classification_report(y_test,y_pred))
 
-# print("confusion Matrix:")
-# print(confusion_matrix(y_test,y_pred))
+print("confusion Matrix:")
+print(confusion_matrix(y_test,y_pred))
+
+print(confusion_matrix)
+#precision
+precision = precision_score(y_test, y_pred)
+print("precision :",precision)
+
+#recall
+recall = recall_score(y_test,y_pred)
+print("recall :",recall)
+
+#F1 Score
+F1Score = f1_score(y_test,y_pred)
+print("F1Score :",F1Score)
